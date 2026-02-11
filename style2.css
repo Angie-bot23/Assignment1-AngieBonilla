@@ -1,1 +1,56 @@
+body {
+    text-align: center;
+}
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+ul {
+    list-style-type: square;
+    text-align: left;
+    display: inline-block;
+}
+
+ol {
+    text-align: left;
+    display: inline-block;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.recipe-columns {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* makes it stack nicely on small screens */
+}
+
+.recipe-columns article {
+    width: 299.9px;
+    text-align: left;
+}
+
+.recipe-columns ul {
+    list-style-type: square;
+}
+
+.recipe-columns ol {
+    padding-left: 20px;
+}
