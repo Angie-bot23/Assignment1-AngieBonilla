@@ -1,8 +1,15 @@
-welcome h2 {color: #fc4c84;
-}
-h1 {color: #fc4c84;}
+h2 {
+  font-size: 35px;
+ font-family: "Sunshiney", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fc4c84;}
 hr {color: #ffd1e0;}
 body {
+  font-size: 18px;
+  font-family: "Flamenco", system-ui;
+  font-weight: 400;
+  font-style: normal;
     text-align: center;
 }
 nav ul {
@@ -29,4 +36,19 @@ article {
 footer {
     margin-top: 50px; /* Adjust the number for more or less space */
     text-align: center;
+}
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav li a:hover {
+    background-color: ##ffd1e0;
+    color: #fc4c84; 
+}
+footer {
+  color:#fc4c84
 }
