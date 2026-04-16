@@ -1,4 +1,15 @@
+h2 {
+  font-size: 35px;
+ font-family: "Sunshiney", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fc4c84;}
+hr {color: #ffd1e0;}
 body {
+  font-size: 18px;
+  font-family: "Flamenco", system-ui;
+  font-weight: 400;
+  font-style: normal;
     text-align: center;
 }
 
