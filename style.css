@@ -1,54 +1,100 @@
+html{
+  background-color: #c5d6b0;
+}
 h2 {
   font-size: 35px;
  font-family: "Sunshiney", cursive;
   font-weight: 400;
   font-style: normal;
   color: #fc4c84;}
-hr {color: #ffd1e0;}
 body {
   font-size: 18px;
   font-family: "Flamenco", system-ui;
   font-weight: 400;
   font-style: normal;
     text-align: center;
+  color: green;
 }
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
+  display: flex; 
+  justify-content: center; 
+  list-style: none; 
 }
 
 nav li {
     margin: 0 15px;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-article {
-    width: 250px;
-}
 
 footer {
-    margin-top: 50px; /* Adjust the number for more or less space */
+    margin-top: 50px;
     text-align: center;
 }
-.header {
-  position: -webkit-sticky;
-  position: sticky;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.centered-container{
+display: flex;
+  justify-content: center;
+gap: 15px;
 }
 nav li a:hover {
-    background-color: ##ffd1e0;
     color: #fc4c84; 
 }
 footer {
-  color:#fc4c84
+  color:#fc4c84; 
+  background-color: #fffcf2;
+  padding: 1px;
+  border-radius: 50px;
 }
+
+.faq-question{
+  padding: 15px;
+  margin-top:10px;
+  background: #84ab54;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 35%;
+  display:block;
+  text-align: center;
+  margin:10px auto;
+  font-size: 18px;
+  font-family: "Flamenco"
+}
+
+.faq-answer {
+  color: #855988;
+  display:none;
+}
+.faq-answer.show {
+  display: block;
+}
+.box{ float: center;
+  background-color: #fffcf2;
+  padding: 20px;
+  border-radius: 50px;}
+#toggle-mode{
+  padding: 10px 20px;
+  background-color: #84ab54;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+#toggle-mode:hover{
+  background-color: #fc4c84;
+}
+.head-box {
+  float: center;
+  background-color: #fffcf2;
+  border-radius: 50px;
+}
+.faq-question:hover {
+background-color: #fc4c84;
+}
+button {
+  font-size: 18px;
+  font-family: "Flamenco";
+}
+.night-mode {
+  background-color: black;
+  color: purple;
