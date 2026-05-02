@@ -125,6 +125,7 @@ section {
 }
 .faq-btn:hover {
   background-color: #84ab54;
+  transition: background-color 0.2s ease;
 }
 
 /* FAQ Answers */
