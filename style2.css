@@ -1,68 +1,196 @@
-h2 {
-  font-size: 35px;
- font-family: "Sunshiney", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color: #fc4c84;}
-hr {color: #ffd1e0;}
+/* My Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sunshiney&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap');
+
+/* whole page */
 body {
+  margin: 0;
+  background-color: #c5d6b0;
+  text-align: center;
+  font-family: "Flamenco", sans-serif;
+font-size: 18px
+}
+
+/* Header block */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Tittle */
+.header h1 {
+  margin: 0;
+  padding: 15px;
+  background-color: #fff8eb;
+  color: #f28593;
+  font-family: 'Sunshiney', cursive;
+font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+}
+
+/* Navbar */
+nav {
+  background-color: #84ab54;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-family: "Flamenco", sans-serif;
+}
+
+nav a:hover {
+  color: #f28593;
+}
+
+/* Section boxes */
+section {
+  padding: 40px 20px;
+  background-color: #fff8eb;
+  color: #f28593;
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 15px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+/* portfolio settings */
+.card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  display: block;
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+.card::after {
+  content: "View Project";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+/* FAQ Buttons */
+.faq-btn {
+  margin-top:10px;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 35%;
+  display:block;
+  text-align: center;
+  margin:10px auto;
   font-size: 18px;
-  font-family: "Flamenco", system-ui;
+  font-family: "Flamenco";
+  background-color: #f28593;
+  border: none;
+  padding: 10px;
+}
+
+/* FAQ Answers */
+.faq-answer {
+  color: #f28593;
+  display: none;
+  margin-bottom: 10px;
+}
+
+/* Feet */
+footer {
+  background-color: #fff8eb;
+  color: #f28593;
+  padding: 20px;
+}
+/* h1 stuff */
+h1 {
+  font-family: "Sunshiney", cursive;
   font-weight: 400;
   font-style: normal;
-    text-align: center;
+  font-size: 36px;
+  margin-top: -10px
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
+.contact {
+  background-color: #fff8eb;
+  color: #f28593;
+  padding: 40px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 15px;
 }
 
-nav li {
-    margin: 0 15px;
-}
-p {
-  color: #B22222;
-justify-content: center;}
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+/* FORM LAYOUT (FLEXBOX requirement) */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-ul {
-    list-style-type: square;
-    text-align: left;
-    display: inline-block;
+input, textarea {
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #f28593;
+  font-family: "Flamenco";
 }
 
-ol {
-    text-align: left;
-    display: inline-block;
-}
-main h1{
-  color: #B22222;
-}
-footer {
-    margin-top: 50px;
+button {
+  background-color: #f28593;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 35%;
+  font-size: 18px;
+  font-family: "Flamenco";
 }
 
-.recipe-columns {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    align-items: stretch;
-  margin: 0 auto;
-  
-  .recipe-columns article {
-    flex: 1;                 
-    max-width: 350px;        
-    text-align: left;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
+/* ERROR TEXT */
+.error {
+  color: red;
+  font-size: 14px;
+  margin: 0;
+}
+
+#successMessage {
+  color: #84ab54;
+  font-weight: bold;
 }
