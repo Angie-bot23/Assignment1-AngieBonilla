@@ -1,69 +1,81 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="style.css">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap');
-</style>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Sunshiney&display=swap');
-</style>
+<html lang="en">
 <head>
-    <title>Angie's Abode</title>
-<header>
-    <section class="head-box">
- <div class="centered-container">       
-        <h2>Angies Abode</h2>
-      <img width= 100px src= ladybug-1.png>
-   </div>
-    </section>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angies Abode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-</header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-<main>
-<section class="box">
-    <h2>Welcome</h2>
-    <p> My name is Angie/Cottage, I am currently a Graphic Design + Computer Science double major.</p>
-  <p>This website is meant to hold a curated selection of my works.</p>
-   <p> Have fun looking around!
-    </p>
-   <button id="toggle-mode">Switch to Night Mode</button>
- </section>
-  <br>
-<section class="box">
-    <h2>Recent Projects</h2>
-    <article>
-            <img width= 160px height= 250px src=WhichWayHomePosterFIN.jpg>
-      <img width= 160px height= 250px src=IntheHeightsposterFIN.png>  
-      <img width= 160px height= 250px src=StandAndDeliverpsoterPNG.png>  
-      <img width= 160px height= 250px src=AngieB_fiixedplumeria.jpg>  
-      <img width= 160px height= 250px src=AliyahMusicPoster.PNG>  <br> <br>
-</article>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Angies ❀ Abode</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<!-- Welcome Section -->
+<section class="welcome">
+  <h1>Welcome</h1>
+  <p>My name is Angie/Cottage.</p>
+  <p>I am currently a Graphic Design + Computer Science double major.</p>
+  <p>This website is meant to hold a curated selection of my works. Have fun looking around!</p>
 </section>
-</main>
-  <br>
-   <section class="box">
-    <h2 class="headers">FAQ</h2>
 
-    <div class="faq-item">
-      <button class="faq-question">What are your work hours?</button>
-      <div class="faq-answer">Monday-Friday, 7am to 11pm</div>
-      <button class="faq-question">Are you currently taking commisions?</button>
-      <div class="faq-answer">Not right now, but commision slots will open during may to august</div>
-      <button class="faq-question">How can i contact you?</button>
-      <div class="faq-answer">preferably email or Instagram</div>
-      <button class="faq-question">why is there a ladybug?</button>
-      <div class="faq-answer">That is a placeholder for my logo, his name is maurice</div>
-      <br>
+<!-- Projects -->
+<section>
+  <h1>Recent Projects</h1>
+<div class="grid">
+  <a href="AngieB_fiixedplumeria.jpg" target="_blank" class="card">
+    <img src="AngieB_fiixedplumeria.jpg">
+  </a>
+
+  <a href="IMG_6247.JPG" target="_blank" class="card">
+    <img src="IMG_6247.JPG">
+  </a>
+
+  <a href="IntheHeightsposterFIN.png" target="_blank" class="card">
+    <img src="IntheHeightsposterFIN.png">
+  </a>
+
+  <a href="StandAndDeliverpsoterPNG.png" target="_blank" class="card">
+    <img src="StandAndDeliverpsoterPNG.png">
+  </a>
+
+  <a href="WhichWayHomePosterFIN.jpg" target="_blank" class="card">
+    <img src="WhichWayHomePosterFIN.jpg">
+  </a>
+</div>
   </section>
+  
+<!-- FAQ -->
+<section>
+  <h1>FAQ</h1>
+
+  <button class="faq-btn">Are your commissions open?</button>
+  <div class="faq-answer">Not at the moment, however during the summer they will be!</div>
+
+  <button class="faq-btn">What are the best ways to contact you?</button>
+  <div class="faq-answer">dm me through Instagram, or fill out my contact page form.</div>
+
+  <button class="faq-btn">How recent are these projects?</button>
+  <div class="faq-answer">I made them this year in my Hand to Pixel class!</div>
+
+  <button class="faq-btn">Will you add more work?</button>
+  <div class="faq-answer">Yes, if I keep up to date on this website!</div>
+
+</section>
+
+<!-- Footer -->
 <footer>
-    <p>Why are you looking down here? looking for the copyright? well fine, (Angie's Abode 2026)®.</p>
+  Why are you looking down here? looking for the copyright? well fine, Angie's Abode 2026®.
 </footer>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
