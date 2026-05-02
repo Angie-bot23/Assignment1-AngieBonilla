@@ -1,20 +1,19 @@
-const questions = document.querySelectorAll(".faq-question");
+//FAQ stuff
+const buttons = document.querySelectorAll(".faq-btn");
 
-questions.forEach((question) => {
-  question.addEventListener("click", () => {
-    const answer = question.nextElementSibling;
-    answer.classList.toggle("show");
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const answer = btn.nextElementSibling;
+
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      
+      document.querySelectorAll(".faq-answer").forEach(a => {
+        a.style.display = "none";
+      });
+
+      answer.style.display = "block";
+    }
   });
 });
-
-
-const toggleBtn = document.getElementById("toggle-mode");
-const body = document.body;
-
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("night-mode");
-  toggleBtn.textContent = document.body.classList.contains("night-mode")
-    ? "Switch to Day Mode"
-    : "Switch to Night Mode";
-});
-
