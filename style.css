@@ -123,6 +123,9 @@ section {
   border: none;
   padding: 10px;
 }
+.faq-btn:hover {
+  background-color: #84ab54;
+}
 
 /* FAQ Answers */
 .faq-answer {
